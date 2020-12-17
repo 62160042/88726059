@@ -1,0 +1,32 @@
+
+<script>
+    rn = Math.floor(Math.random() * 100);
+
+    function guess(n){
+        document.getElementById('Number').innerHTML += n+" ";}
+
+    function reguess(n){
+        if(n<rn)
+            document.getElementById('Result').innerHTML ="น้อยกว่า Random number!";
+        else if(n>rn)
+            document.getElementById('Result').innerHTML ="มากกว่า Random number!";
+        else
+            document.getElementById('Result').innerHTML ="ถูกต้อง!";}
+
+    function sOver(){
+        rn = Math.floor(Math.random() * 100);
+        document.getElementById('Number').innerHTML =" ";
+        document.getElementById('Result').innerHTML =" ";
+        }
+
+</script>
+
+<button onclick="guess(gn.value); reguess(gn.value)">Guess</button></br>
+
+<input type="text" placeholder="?" id="gn"></br>
+
+<p id="Number"></p><br>
+<p id="Result"></p>
+
+
+<button onclick="sOver()">Start Over</button></br>
