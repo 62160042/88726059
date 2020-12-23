@@ -1,0 +1,27 @@
+<!doctype html>
+<h2>3.โปรแกรม เครื่องคิดเลข - cal.html</h2>
+<script>
+function cal(){
+    document.getElementById("show").innerHTML ="";
+   var x = document.getElementById("num1").value;
+   var y = document.getElementById("num2").value;
+   var z = document.getElementById("sym").value;
+   var q = Number(x)+Number(y);
+   if(z==="1")document.getElementById("show").innerHTML = (q);
+   else if(z==="2")document.getElementById("show").innerHTML = (x-y);
+   else if(z==="3")document.getElementById("show").innerHTML = (x*y);
+   else if(z==="4")document.getElementById("show").innerHTML = (x/y);
+   }
+</script>
+<body>
+    <input type="number" placeholder="num1" id="num1" >
+    <select id="sym" >
+        <option value="1">+</option>
+        <option value="2">-</option>
+        <option value="3">x</option>
+        <option value="4">/</option>
+    </select>   
+    <input type="number" placeholder="num2" id="num2" >
+    <button onclick="cal()" >=</button>
+    <p id="show"></p>
+</body>
