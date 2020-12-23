@@ -3,19 +3,21 @@
 <script>
 function cal(){
     document.getElementById("show").innerHTML ="";
-   var x = document.getElementById("num1").value;
-   var y = document.getElementById("num2").value;
-   var z = document.getElementById("sym").value;
-   var q = Number(x)+Number(y);
-   if(z==="1")document.getElementById("show").innerHTML = (q);
-   else if(z==="2")document.getElementById("show").innerHTML = (x-y);
-   else if(z==="3")document.getElementById("show").innerHTML = (x*y);
-   else if(z==="4")document.getElementById("show").innerHTML = (x/y);
+   var n1 = document.getElementById("num1").value;
+   var n2 = document.getElementById("num2").value;
+   var n3 = document.getElementById("syn").value;
+   var s = Number(n1)+Number(n2);
+
+   if(n3==="1")document.getElementById("show").innerHTML = (s);
+   else if(n3==="2")document.getElementById("show").innerHTML = (n1-n2);
+   else if(n3==="3")document.getElementById("show").innerHTML = (n1*n2);
+   else if(n3==="4")document.getElementById("show").innerHTML = (n1/n2);
    }
+
 </script>
 <body>
     <input type="number" placeholder="num1" id="num1" >
-    <select id="sym" >
+    <select id="syn" >
         <option value="1">+</option>
         <option value="2">-</option>
         <option value="3">x</option>
