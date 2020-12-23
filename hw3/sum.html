@@ -1,0 +1,27 @@
+<!doctype html>
+<h2>4.โปรแกรม บวกสะสม - sum.html</h2>
+<script>
+function plus(){
+document.getElementById("show").innerHTML ="";
+
+   var n1 = document.getElementById("num1").value;
+   var n2 = document.getElementById("num2").value;
+   var n3 = 0;
+
+   i = Number(n1)
+
+    for (; i < Number(n2)+1; i++) {
+        n3=Number(n3)+Number(i);
+        if(i<n2)document.getElementById("show").innerHTML += i+"+" ;
+        else if(i=n2)document.getElementById("show").innerHTML += i+" = "+n3 ;
+   }
+    }
+
+</script>
+<body>
+    <input type="num" placeholder="num1" id="num1" >
+    -
+    <input type="num" placeholder="num2" id="num2" >
+    <button onclick="plus()" >Summary</button>
+<p id="show"></p>
+</body>
