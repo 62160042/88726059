@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, td {
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>4.โปรเเกรม บวกสะสม-sum.html</h3>
+    <input  type="text" id="num">
+    <button onclick="guess(num.value)">สุ่ม</button>
+
+    <table id="sh">
+
+    </table>
+
+    <script>
+        
+    
+        function guess(n){
+            
+            while(sh.hasChildNodes())
+            {
+            sh.removeChild(sh.fhild);irstC
+            }
+
+            var rn = [n];
+            for(o=0; o<Number(n);o++){
+                rn[o] = Number(Math.floor(Math.random() * 100))
+            }
+            rn = rn.sort(function(a, b){return b - a});
+
+            var table = document.getElementById("sh");
+
+            var i=1;
+            for(; i<=Number(n); i++){
+                
+                var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+
+                cell1.innerHTML = rn[i-1];
+                cell2.innerHTML = rn;
+              
+            }
+            var row = table.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "ตัวเลข";
+                cell2.innerHTML = "ถูกสุ่ม(ครั้ง)";
+        }
+    </script>
+
+</body>
+</html>

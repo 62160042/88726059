@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calNumber</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        font-size: Tahoma, 12px;
+      }
+      </style>
+
+        <body>
+            <input type="text" id="intn">
+            <button type="submit" onclick="counting(intn.value)">Convert</button>
+            <hr><div id="fore"></div>
+            
+         </body>
+
+        <hr/>
+        <script>
+        function counting(num){
+           
+                n = num;
+            var k1 ="";
+        k1 = Math.floor(n/1000);n=n%1000
+        document.getElementById("fore").innerHTML = "แบงค์ 1000 บาท:"+k1+" ใบ<br>";
+        }
+    </script>
+        <script>
+        function counting(num){
+           
+            
+                n = num;
+            var k2 ="";
+        k2 = Math.floor(n/500);n=n%500
+        document.getElementById("fore").innerHTML = "แบงค์ 500 บาท:"+k2+" ใบ<br>";
+        }
+    </script>
+        <script>
+        function counting(num){
+           
+            
+                n = num;
+            var k3 ="";
+        k3 = Math.floor(n/100);n=n%100
+        document.getElementById("fore").innerHTML = "แบงค์ 100 บาท:"+k3+" ใบ<br>";
+        }
+    </script>
+        <script>
+        function counting(num){
+           
+           
+                n = num;
+            var k4 ="";
+        k4 = Math.floor(n/50);n=n%50
+        document.getElementById("fore").innerHTML = "แบงค์ 50 บาท:"+k4+" ใบ<br>";
+        }
+    </script>
+        <script>
+        function counting(num){
+           
+            
+                n = num;
+            var k5 ="";
+        k5 = Math.floor(n/20);n=n%20
+        document.getElementById("fore").innerHTML = "แบงค์ 20 บาท:"+k5+" ใบ<br>";
+        }
+    </script>
+        <script>
+        function counting(num){
+        
+           
+                n = num;
+            var k6 ="";
+        k6 = Math.floor(n/10);n=n%10
+        document.getElementById("fore").innerHTML = "เหรียญ 10 บาท:"+k6+" ใบ<br>";
+        }
+    </script>
+        <script>
+        function counting(num){
+           
+           
+                n = num;
+            var k7 ="";
+        k7 = Math.floor(n/5);n=n%5
+        document.getElementById("fore").innerHTML = "เหรียญ 5 บาท:"+k7+" เหรียญ<br>";
+        }
+    </script>
+        <script>
+        function counting(num){
+                n = num;
+            var k8 ="";
+        k8 = Math.floor(n/2);n=n%2
+        document.getElementById("fore").innerHTML = "เหรียญ 2 บาท:"+k8+" เหรียญ<br>";
+        }
+    </script>
+        <script>
+        function counting(num){
+                n = num;
+            var k9 ="";
+        k9 = Math.floor(n/1);
+        document.getElementById("fore").innerHTML = "เหรียญ 1 บาท:"+k9+" เหรียญ<br>";
+        }       
+</script>
+</head>
+</html>
